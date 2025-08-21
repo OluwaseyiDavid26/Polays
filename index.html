@@ -41,17 +41,16 @@
           >
             <div class="logo">
               <h1 class="mb-0">
-                <a href="index.html" title="Home"
-                  ><img
-                    class="img-fluid default-logo"
-                    src="assets/images/polays.png"
-                    srcset="assets/images/polays.png"
-                    alt="Logo" /><img
-                    class="img-fluid hover-logo"
-                    src="assets/images/polays.png"
-                    srcset="assets/images/polays.png"
-                    alt="Hover Logo"
-                /></a>
+                <a
+                  class="navbar-brand d-flex align-items-center"
+                  href="index.html"
+                >
+                  <img
+                    src="assets/images/polays - 11.png"
+                    alt="Logo"
+                    class="navbar-logo"
+                  />
+                </a>
               </h1>
             </div>
             <!-- Logo -->
@@ -154,8 +153,8 @@
                   />
                   <div class="feat-cap-wrap position-absolute">
                     <div class="feat-cap position-relative">
-                      <i class="position-absolute"
-                        ><svg
+                      <i class="position-absolute">
+                        <svg
                           viewBox="0 0 359 354"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
@@ -164,8 +163,9 @@
                             d="M358.5 351H323V300.316L250.863 264.339V331.541H278.904V170.438L201.566 91.0182L200.661 327.921L223.727 351L224.179 71.1066L166.063 3V142.381L126.489 156.862L149.781 267.507L171.49 289.455V212.75H115.635L80.3576 331.541H171.49V306.651H34V351H0"
                             stroke="#f1f1f1"
                             stroke-width="2"
-                          /></svg
-                      ></i>
+                          />
+                        </svg>
+                      </i>
                       <span
                         class="d-block thm-clr p-2 bg-white border-white-100 rounded-xl mb-0"
                         >Polays International Concept Limited</span
@@ -177,7 +177,7 @@
                       </h2>
                       <a
                         class="thm-btn thm-bg d-inline-block position-relative"
-                        href="portfolio-single.html"
+                        href="#about"
                         title=""
                         >Learn More<span class="brd-tp-lft"></span
                         ><span class="brd-btm-rgt"></span
@@ -324,21 +324,66 @@
                     alt="Post Image 1"
                   />
                   <div class="post-info info-right position-absolute">
-                    <h3 class="mb-0">
-                      <a href="portfolio-single.html" title=""
-                        >Ore Terminal<i></i
-                      ></a>
-                    </h3>
+                    <h3 class="mb-0">Ore Terminal</h3>
                     <span class="thm-bg position-absolute">01</span>
                     <a
+                      href="javascript:void(0);"
                       class="d-inline-block position-absolute thm-clr"
-                      href="portfolio-single.html"
-                      title=""
+                      onclick="openMoreGallery()"
                       >More</a
                     >
                   </div>
                 </div>
+
+                <!-- Hidden Gallery Section -->
+                <div
+                  id="oreGallery"
+                  style="display: none"
+                  class="row mrg5 mt-3"
+                >
+                  <div class="col-md-4 col-sm-4 col-lg-4">
+                    <a
+                      href="assets/images/Bitmap.png"
+                      data-fancybox="ore-gallery"
+                      class="d-block overflow-hidden w-100 mb-3"
+                    >
+                      <img
+                        src="assets/images/Bitmap.png"
+                        class="w-[90px] h-[80px] object-cover block"
+                        alt="Ore Gallery 1"
+                      />
+                    </a>
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-lg-4">
+                    <a
+                      href="assets/images/Bitmap (1) (2).png"
+                      data-fancybox="ore-gallery"
+                      class="d-block overflow-hidden w-100 mb-3"
+                    >
+                      <img
+                        src="assets/images/Bitmap (1) (2).png"
+                        class="w-[90px] h-[80px] object-cover block"
+                        alt="Ore Gallery 2"
+                      />
+                    </a>
+                  </div>
+
+                  <div class="col-md-4 col-sm-4 col-lg-4">
+                    <a
+                      href="assets/images/Bitmap (2) (2).png"
+                      data-fancybox="ore-gallery"
+                      class="d-block overflow-hidden w-100 mb-3"
+                    >
+                      <img
+                        src="assets/images/Bitmap (2) (2).png"
+                        class="w-[90px] h-[80px] object-cover block"
+                        alt="Ore Gallery 5"
+                      />
+                    </a>
+                  </div>
+                </div>
               </div>
+
               <div class="col-md-6 col-sm-6 col-lg-4">
                 <div class="post-box overflow-hidden position-relative w-100">
                   <img
@@ -347,16 +392,12 @@
                     alt="Post Image 2"
                   />
                   <div class="post-info info-center position-absolute">
-                    <h3 class="mb-0">
-                      <a href="portfolio-single.html" title=""
-                        >Wuse Heights<i></i
-                      ></a>
-                    </h3>
+                    <h3 class="mb-0">Wuse Heights</h3>
                     <span class="thm-bg position-absolute">02</span>
                     <a
+                      href="javascript:void(0);"
                       class="d-inline-block position-absolute thm-clr"
-                      href="portfolio-single.html"
-                      title=""
+                      onclick="openWuseGallery()"
                       >More</a
                     >
                   </div>
@@ -365,21 +406,17 @@
               <div class="col-md-6 col-sm-6 col-lg-4">
                 <div class="post-box overflow-hidden position-relative w-100">
                   <img
-                    class="img-fluid w-100"
-                    src="assets/images/resources/proj3.jpg"
+                    class="img-fluid w-full h-[500px]"
+                    src="assets/images/Bitmap (2) (3).png"
                     alt="Post Image 3"
                   />
                   <div class="post-info info-left position-absolute">
-                    <h3 class="mb-0">
-                      <a href="portfolio-single.html" title=""
-                        >Sample Projects<i></i
-                      ></a>
-                    </h3>
+                    <h3 class="mb-0">Sample Projects</h3>
                     <span class="thm-bg position-absolute">03</span>
                     <a
+                      href="javascript:void(0);"
                       class="d-inline-block position-absolute thm-clr"
-                      href="portfolio-single.html"
-                      title=""
+                      onclick="openSampleGallery()"
                       >More</a
                     >
                   </div>
@@ -500,7 +537,7 @@
                         target="”_blank”"
                         href="assets/images/resources/gall1.jpg"
                         title=""
-                        >Ore Terminal</a
+                        >Project Management</a
                       >
                     </h3>
                     <ul
@@ -554,9 +591,10 @@
                           target="”_blank”"
                           href="assets/images/resources/gall2.jpg"
                           title=""
-                          >More<span class="brd-tp-lft"></span
-                          ><span class="brd-btm-rgt"></span
-                        ></a>
+                        >
+                          More<span class="brd-tp-lft"></span
+                          ><span class="brd-btm-rgt"></span>
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -566,12 +604,12 @@
                     >
                       <img
                         class="img-fluid w-100"
-                        src="assets/images/wuse-height2.jpg"
+                        src="assets/images/wuse-height1.jpg"
                         alt="Project Image 3"
                       />
                       <div class="proj-info position-absolute">
                         <h3 class="mb-0">
-                          <a href="#" title="">Wuse Heights</a>
+                          <a href="#" title="">Renovation & Remodeling</a>
                         </h3>
                         <ul
                           class="proj-info-list mb-0 list-unstyled d-flex flex-wrap w-100"
@@ -590,9 +628,10 @@
                           target="”_blank”"
                           href="assets/images/resources/gall3.jpg"
                           title=""
-                          >More<span class="brd-tp-lft"></span
-                          ><span class="brd-btm-rgt"></span
-                        ></a>
+                        >
+                          More<span class="brd-tp-lft"></span
+                          ><span class="brd-btm-rgt"></span>
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -626,9 +665,10 @@
                           target="”_blank”"
                           href="assets/images/resources/gall4.jpg"
                           title=""
-                          >More<span class="brd-tp-lft"></span
-                          ><span class="brd-btm-rgt"></span
-                        ></a>
+                        >
+                          More<span class="brd-tp-lft"></span
+                          ><span class="brd-btm-rgt"></span>
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -782,8 +822,8 @@
               <div
                 class="cont-inner position-relative text-center d-inline-block"
               >
-                <i class="position-absolute"
-                  ><svg
+                <i class="position-absolute">
+                  <svg
                     viewBox="0 0 308 354"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -792,14 +832,73 @@
                       d="M358.5 351H323V300.316L250.863 264.339V331.541H278.904V170.438L201.566 91.0182L200.661 327.921L223.727 351L224.179 71.1066L166.063 3V142.381L126.489 156.862L149.781 267.507L171.49 289.455V212.75H115.635L80.3576 331.541H171.49V306.651H34V351H0"
                       stroke="#f1f1f1"
                       stroke-width="2"
-                    /></svg
-                ></i>
+                    />
+                  </svg>
+                </i>
                 <div class="cont-title w-100">
                   <h3 class="mb-0">Polays International Consulting</h3>
                   <p class="mb-0">
                     Get in touch and let Polays make your dreams a reality
                   </p>
-                </div>
+                  <form class="w-100" id="email-form" method="post" action="#">
+  <div class="response w-100"></div>
+
+  <!-- Name Field -->
+  <span class="field-box d-block w-100 position-relative">
+    <i class="thm-clr icon-user" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%);"></i>
+    <input
+      class="fname"
+      type="text"
+      name="fname"
+      placeholder="Your Name"
+      required
+      style="border: none; border-bottom: 1px solid #ccc; background: transparent; padding: 10px 10px 10px 40px; width: 100%;"
+    />
+  </span>
+
+  <!-- Email Field -->
+  <span class="field-box d-block w-100 position-relative">
+    <i class="thm-clr icon-envelope" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%);"></i>
+    <input
+      class="email"
+      type="email"
+      name="email"
+      placeholder="Your Email"
+      required
+      style="border: none; border-bottom: 1px solid #ccc; background: transparent; padding: 10px 10px 10px 40px; width: 100%;"
+    />
+  </span>
+
+  <!-- Select Field -->
+  <span class="field-box d-block w-100 position-relative">
+      <i class="fa fa-cog thm-clr" 
+     style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); color: #ff0000af;">
+  </i>
+    <select
+      name="service"
+      required
+      style="border: none; border-bottom: 1px solid #ccc; background: transparent; padding: 15px 15px 15px 45px; width: 100%;"
+    >
+      <option value="">Select a Service</option>
+      <option value="consulting">Project Management</option>
+      <option value="training">3d Drawing</option>
+      <option value="project">Design Drawing</option>
+         <option value="project">Renovation & Remodeling</option>
+      <option value="other">Other</option>
+    </select>
+  </span>
+
+  <!-- Submit Button -->
+  <button
+    class="thm-btn thm-bg d-inline-block position-relative"
+    type="submit"
+    id="submit"
+  >
+    Send<span class="brd-tp-lft"></span><span class="brd-btm-rgt"></span>
+  </button>
+</form>
+
+                <!-- </div>
                 <form class="w-100" id="email-form" method="post" action="#">
                   <div class="response w-100"></div>
                   <span class="field-box d-block w-100 position-relative"
@@ -828,7 +927,7 @@
                     Send<span class="brd-tp-lft"></span
                     ><span class="brd-btm-rgt"></span>
                   </button>
-                </form>
+                </form> -->
               </div>
             </div>
             <!-- Contact Wrap -->
@@ -839,7 +938,7 @@
         <div class="w-100 pt-110 pb-110 position-relative">
           <div class="spnsrs-wrap position-relative w-100">
             <ul
-              class="spnsrs-list justify-content-center align-items-center d-flex flex-wrap mb-0 list-unstyled"
+              class="spnsrs-list justify-content-center align-items-center d-flex flex-nowrap mb-0 list-unstyled"
             >
               <li>
                 <div class="spnsr-box text-center w-100">
@@ -851,6 +950,7 @@
                   /></a>
                 </div>
               </li>
+
               <li>
                 <div class="spnsr-box text-center w-100">
                   <a href="javascript:void(0);" title=""
@@ -883,6 +983,7 @@
                   /></a>
                 </div>
               </li>
+              
               <li>
                 <div class="spnsr-box text-center w-100">
                   <a href="javascript:void(0);" title=""
@@ -928,26 +1029,28 @@
                 class="clc-tp-btn thm-bg position-absolute"
                 href="javascript:void(0);"
                 title=""
-                ><svg
+              >
+                <svg
                   viewBox="0 0 16 28"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path d="M8 0L14.9282 7.5H1.0718L8 0Z" fill="#1E1E20" />
-                  <path d="M8 7L8 28" stroke="#1E1E20" /></svg
-              ></a>
+                  <path d="M8 7L8 28" stroke="#1E1E20" />
+                </svg>
+              </a>
               <div class="row">
                 <div class="col-md-6 col-sm-6 col-lg-3">
                   <div class="widget-box w-100">
                     <div class="logo">
                       <h1 class="mb-0">
-                        <a href="index.html" title="Home"
-                          ><img
-                            class="img-fluid"
-                            src="assets/images/polays.png"
-                            srcset="assets/images/polays.png"
+                        <a href="index.html" title="Home">
+                          <img
+                            class="img-fluid navbar-logo"
+                            src="assets/images/polays - 22.png"
                             alt="Logo 2"
-                        /></a>
+                          />
+                        </a>
                       </h1>
                     </div>
                     <!-- Logo -->
@@ -1026,7 +1129,8 @@
                               src="assets/images/Bitmap.png"
                               alt="Widget Gallery Image 1"
                               class="w-[90px] h-[80px] object-cover block"
-                          /></a>
+                            />
+                          </a>
                         </div>
                         <div class="col-md-4 col-sm-4 col-lg-4">
                           <a
@@ -1039,7 +1143,8 @@
                               src="assets/images/Bitmap (1) (2).png"
                               alt="Widget Gallery Image 1"
                               class="w-[90px] h-[80px] object-cover block"
-                          /></a>
+                            />
+                          </a>
                         </div>
                         <div class="col-md-4 col-sm-4 col-lg-4">
                           <a
@@ -1052,7 +1157,8 @@
                               src="assets/images/Bitmap (1) (3).png"
                               alt="Widget Gallery Image 1"
                               class="w-[90px] h-[80px] object-cover block"
-                          /></a>
+                            />
+                          </a>
                         </div>
                         <div class="col-md-4 col-sm-4 col-lg-4">
                           <a
@@ -1065,7 +1171,8 @@
                               src="assets/images/Bitmap (1) (4).png"
                               alt="Widget Gallery Image 1"
                               class="w-[90px] h-[80px] object-cover block"
-                          /></a>
+                            />
+                          </a>
                         </div>
                         <div class="col-md-4 col-sm-4 col-lg-4">
                           <a
@@ -1078,7 +1185,8 @@
                               src="assets/images/Bitmap (2) (2).png"
                               alt="Widget Gallery Image 1"
                               class="w-[90px] h-[80px] object-cover block"
-                          /></a>
+                            />
+                          </a>
                         </div>
                         <div class="col-md-4 col-sm-4 col-lg-4">
                           <a
@@ -1091,7 +1199,8 @@
                               src="assets/images/Bitmap (2) (3).png"
                               alt="Widget Gallery Image 1"
                               class="w-[90px] h-[80px] object-cover block"
-                          /></a>
+                            />
+                          </a>
                         </div>
                         <div class="col-md-4 col-sm-4 col-lg-4">
                           <a
@@ -1104,7 +1213,8 @@
                               src="assets/images/Bitmap (3).png"
                               alt="Widget Gallery Image 1"
                               class="w-[90px] h-[80px] object-cover block"
-                          /></a>
+                            />
+                          </a>
                         </div>
                         <div class="col-md-4 col-sm-4 col-lg-4">
                           <a
@@ -1117,7 +1227,8 @@
                               src="assets/images/Bitmap (4).png"
                               alt="Widget Gallery Image 1"
                               class="w-[90px] h-[80px] object-cover block"
-                          /></a>
+                            />
+                          </a>
                         </div>
                         <div class="col-md-4 col-sm-4 col-lg-4">
                           <a
@@ -1130,7 +1241,8 @@
                               src="assets/images/Bitmap (5).png"
                               alt="Widget Gallery Image 1"
                               class="w-[90px] h-[80px] object-cover block"
-                          /></a>
+                            />
+                          </a>
                         </div>
                       </div>
                       <!-- <div class="col-md-4 col-sm-4 col-lg-4"><a class="d-block overflow-hidden position-relative w-100 mb-05" href="assets/images/Bitmap (5).png" data-fancybox="gallery" title=""><img class="img-fluid w-100" src="assets/images/Bitmap (5).png" alt="Widget Gallery Image 2"></a></div>
@@ -1187,5 +1299,69 @@
     <script src="assets/js/perfect-scrollbar.min.js"></script>
     <script src="assets/js/slick.min.js"></script>
     <script src="assets/js/custom-scripts.js"></script>
+    <script>
+      function openMoreGallery() {
+        // Array of hidden images
+        $.fancybox.open(
+          [
+            {
+              src: "assets/images/Bitmap.png",
+              opts: { caption: "Ore Terminal 1" },
+            },
+            {
+              src: "assets/images/Bitmap (1) (2).png",
+              opts: { caption: "Ore Terminal 2" },
+            },
+           
+          ],
+          {
+            loop: true,
+            thumbs: { autoStart: true },
+          }
+        );
+      }
+    </script>
+    <script>
+      function openWuseGallery() {
+        $.fancybox.open(
+          [
+            {
+              src: "assets/images/wuse-height1.jpg",
+              opts: { caption: "Wuse Heights - 1" },
+            },
+            {
+              src: "assets/images/wuse-height2.jpg",
+              opts: { caption: "Wuse Heights - 2" },
+            },
+           
+          ],
+          {
+            loop: true,
+            thumbs: { autoStart: true },
+          }
+        );
+      }
+    </script>
+    <script>
+      function openSampleGallery() {
+        $.fancybox.open(
+          [
+            {
+              src: "assets/images/resources/Bitmap (2) (1).png",
+              opts: { caption: "Sample Project - 1" },
+            },
+            {
+              src: "assets/images/Bitmap (2) (1).png",
+              opts: { caption: "Sample Project - 2" },
+            },
+           
+          ],
+          {
+            loop: true,
+            thumbs: { autoStart: true },
+          }
+        );
+      }
+    </script>
   </body>
 </html>

@@ -8623,3 +8623,15 @@ form.cart + .shop-detail-bottom {
 .shop-detail-tabs .tab-pane > p + p {
   margin-top: 1.875rem;
 }
+.navbar-logo {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+}
+.navbar-logo {
+  height: 60px; /* adjust as needed */
+  width: auto; /* keeps proportions */
+}
+select {
+  color: #999; /* same as placeholder */
+}
