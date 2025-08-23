@@ -34,6 +34,9 @@
   </head>
   <body>
     <main>
+
+
+      
       <header class="stick style1 w-100">
         <div class="container">
           <div
@@ -548,14 +551,14 @@
                       <li><i class="icon-bed thm-clr"></i>5 Offices</li>
                       <li><i class="icon-bath thm-clr"></i> Station</li>
                     </ul>
-                    <a
+                    <!-- <a
                       class="thm-btn thm-bg d-inline-block position-relative"
                       target="”_blank”"
                       href="assets/images/resources/gall1.jpg"
                       title=""
                       >More<span class="brd-tp-lft"></span
                       ><span class="brd-btm-rgt"></span
-                    ></a>
+                    ></a> -->
                   </div>
                 </div>
               </div>
@@ -586,7 +589,7 @@
                           <li><i class="icon-bed thm-clr"></i>6 rooms</li>
                           <li><i class="icon-bath thm-clr"></i>3 bath</li>
                         </ul>
-                        <a
+                        <!-- <a
                           class="thm-btn thm-bg d-inline-block position-relative"
                           target="”_blank”"
                           href="assets/images/resources/gall2.jpg"
@@ -594,7 +597,7 @@
                         >
                           More<span class="brd-tp-lft"></span
                           ><span class="brd-btm-rgt"></span>
-                        </a>
+                        </a> -->
                       </div>
                     </div>
                   </div>
@@ -623,7 +626,7 @@
                           <li><i class="icon-bed thm-clr"></i>24 rooms</li>
                           <li><i class="icon-bath thm-clr"></i>28 bath</li>
                         </ul>
-                        <a
+                        <!-- <a
                           class="thm-btn thm-bg d-inline-block position-relative"
                           target="”_blank”"
                           href="assets/images/resources/gall3.jpg"
@@ -631,7 +634,7 @@
                         >
                           More<span class="brd-tp-lft"></span
                           ><span class="brd-btm-rgt"></span>
-                        </a>
+                        </a> -->
                       </div>
                     </div>
                   </div>
@@ -657,10 +660,9 @@
                           <li>
                             <i class="icon-arrow-to-top thm-clr"></i>7,4 m
                           </li>
-                          <!-- <li><i class="icon-bed thm-clr"></i>6 rooms</li>
-                                                    <li><i class="icon-bath thm-clr"></i>6 bath</li> -->
+                          
                         </ul>
-                        <a
+                        <!-- <a
                           class="thm-btn thm-bg d-inline-block position-relative"
                           target="”_blank”"
                           href="assets/images/resources/gall4.jpg"
@@ -668,7 +670,7 @@
                         >
                           More<span class="brd-tp-lft"></span
                           ><span class="brd-btm-rgt"></span>
-                        </a>
+                        </a> -->
                       </div>
                     </div>
                   </div>
@@ -938,7 +940,7 @@
         <div class="w-100 pt-110 pb-110 position-relative">
           <div class="spnsrs-wrap position-relative w-100">
             <ul
-              class="spnsrs-list justify-content-center align-items-center d-flex flex-nowrap mb-0 list-unstyled"
+              class="spnsrs-list justify-content-center align-items-center d-flex flex-wrap mb-0 list-unstyled"
             >
               <li>
                 <div class="spnsr-box text-center w-100">
@@ -1363,5 +1365,28 @@
         );
       }
     </script>
+  <!-- <script>
+      $(document).ready(function(){
+        const menu_close = $('.menu-close');
+        $('.responsive-menu li a').on('click', function(e){
+          menu_close.click();
+        });
+      });
+</script> -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const menuClose = document.querySelector(".menu-close");
+    const menuLinks = document.querySelectorAll(".responsive-menu li a");
+
+    menuLinks.forEach(function (link) {
+      link.addEventListener("click", function () {
+        menuClose.click(); // trigger the close button
+      });
+    });
+  });
+</script>
+
+
+
   </body>
 </html>

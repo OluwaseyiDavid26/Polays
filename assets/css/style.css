@@ -1,6 +1,8 @@
 /** ======= // TABLE OF CONTENT // ============================
 01- Google Fonts
-02- General Variables
+02- Gene
+
+al Variables
 03- General Styling
     03.1- Paddings
     03.2- Margins
@@ -2371,10 +2373,16 @@ header.stick {
 .logo > h1 {
   line-height: inherit;
 }
-.logo-menu-wrap .logo {
+/* .logo-menu-wrap .logo {
   flex: 0 0 16.875rem;
   max-width: 16.875rem;
+} */
+.logo-menu-wrap {
+  display: flex;
+  align-items: center; /* vertical centering */
+  justify-content: space-between;
 }
+
 .logo-menu-wrap .logo + nav {
   flex: 0 0 calc(100% - 16.875rem);
   max-width: calc(100% - 16.875rem);
@@ -2810,9 +2818,13 @@ header.sticky nav > div:not(.nav-right) > ul > li {
   display: none;
   padding-left: 1.25rem;
   margin-top: 7px;
+  list-style: none;
+  list-style: none !important;
+  list-style-type: none !important;
 }
 .responsive-menu > ul ul li {
   font-size: 1rem;
+  list-style: none;
 }
 .responsive-menu > ul li.active > a,
 .responsive-menu > ul li.active-parent > a,
@@ -2820,11 +2832,17 @@ header.sticky nav > div:not(.nav-right) > ul > li {
 .responsive-menu > ul li > a:focus {
   color: var(--color1);
   font-weight: 500;
+  list-style: none;
+  list-style: none !important;
+  list-style-type: none !important;
 }
 .responsive-menu > ul li a {
   display: block;
   position: relative;
   padding-right: 1.25rem;
+  list-style: none;
+  list-style: none !important;
+  list-style-type: none !important;
 }
 .responsive-menu > ul li.menu-item-has-children > a::before {
   content: "\f0d7";
@@ -2835,15 +2853,23 @@ header.sticky nav > div:not(.nav-right) > ul > li {
   top: 0;
   line-height: inherit;
   font-size: 14px;
+  list-style: none;
+  list-style: none !important;
+  list-style-type: none !important;
 }
 .responsive-menu > ul > li + li {
   margin-top: 7px;
+  list-style: none;
+  list-style: none !important;
+  list-style-type: none !important;
 }
 .responsive-menu > ul ul li + li {
   margin-top: 3px;
+  list-style: none;
 }
 .responsive-menu > ul + .scl-links {
   margin-top: 2.5rem;
+  list-style: none;
 }
 
 /*===== Featured Area Style 1 =====*/
@@ -8624,14 +8650,28 @@ form.cart + .shop-detail-bottom {
   margin-top: 1.875rem;
 }
 .navbar-logo {
-  height: 60px;
-  width: auto;
+  display: block;
+  max-height: 60px; /* keep logo consistent */
+  height: auto;
   object-fit: contain;
 }
-.navbar-logo {
-  height: 60px; /* adjust as needed */
-  width: auto; /* keeps proportions */
-}
+
 select {
   color: #999; /* same as placeholder */
+}
+
+/* Hidden by default */
+.responsive-menu {
+  right: -100%;
+  transition: right 0.3s ease-in-out;
+}
+
+/* Visible when toggled */
+.responsive-menu.active {
+  right: 0;
+}
+.navbar-logo {
+  display: block; /* removes inline spacing issue */
+  max-height: 60px; /* set a fixed max height */
+  height: auto;
 }
