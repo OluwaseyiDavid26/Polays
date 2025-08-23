@@ -1,7 +1,6 @@
 /** ======= // TABLE OF CONTENT // ============================
 01- Google Fonts
 02- Gene
-
 al Variables
 03- General Styling
     03.1- Paddings
@@ -2818,13 +2817,9 @@ header.sticky nav > div:not(.nav-right) > ul > li {
   display: none;
   padding-left: 1.25rem;
   margin-top: 7px;
-  list-style: none;
-  list-style: none !important;
-  list-style-type: none !important;
 }
 .responsive-menu > ul ul li {
   font-size: 1rem;
-  list-style: none;
 }
 .responsive-menu > ul li.active > a,
 .responsive-menu > ul li.active-parent > a,
@@ -2832,17 +2827,11 @@ header.sticky nav > div:not(.nav-right) > ul > li {
 .responsive-menu > ul li > a:focus {
   color: var(--color1);
   font-weight: 500;
-  list-style: none;
-  list-style: none !important;
-  list-style-type: none !important;
 }
 .responsive-menu > ul li a {
   display: block;
   position: relative;
   padding-right: 1.25rem;
-  list-style: none;
-  list-style: none !important;
-  list-style-type: none !important;
 }
 .responsive-menu > ul li.menu-item-has-children > a::before {
   content: "\f0d7";
@@ -2853,23 +2842,15 @@ header.sticky nav > div:not(.nav-right) > ul > li {
   top: 0;
   line-height: inherit;
   font-size: 14px;
-  list-style: none;
-  list-style: none !important;
-  list-style-type: none !important;
 }
 .responsive-menu > ul > li + li {
   margin-top: 7px;
-  list-style: none;
-  list-style: none !important;
-  list-style-type: none !important;
 }
 .responsive-menu > ul ul li + li {
   margin-top: 3px;
-  list-style: none;
 }
 .responsive-menu > ul + .scl-links {
   margin-top: 2.5rem;
-  list-style: none;
 }
 
 /*===== Featured Area Style 1 =====*/
